@@ -1,0 +1,188 @@
+/* COLOR PALETTE 1
+
+https://coolors.co/896978-839791-aac0af-ffd4ca-efd5c3
+#896678- mauve taupe
+#839791- morning blue
+#aac0af- cambridge blue
+#ffd4ca- pale pink
+#efd5c3- unbleached silk
+*/
+
+/* COLOR PALETTE 2
+
+https://coolors.co/a63a50-f0e7d8-ab9b96-a1674a-ba6e6e
+#a63a50- aaranth purple 
+#f0e7d8- eggshell 
+#ab9b96- silver pink
+#a1674a- brown sugar
+#ba6e6e- copper penny
+
+#A1C6D7 - blue light
+#c3dfe0 - super light blue
+*/
+
+/* COLOR PALETTE 3
+https://coolors.co/ecc8af-e7ad99-ce796b-c18c5d-495867
+*/
+
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+} 
+/* Global styles
+------------------------------------------------------*/
+body {
+    color: #343434;
+    margin: 0;
+    padding: 0;
+    font-family: 'Muli', sans-serif;
+    font-size: 17px;
+    line-height: 1.5;
+}
+img {
+    width: 300px;
+}
+a {
+    color: floralwhite;
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: none;
+}
+h1 {
+    margin: 0;
+    font-size: 65px;
+        line-height: 1.3;
+}
+h2 {
+    font-size: 28px;
+
+}
+h1, h2 {
+    font-family: 'Merienda', cursive;
+    font-weight: 200;
+}
+h3 {
+    margin-bottom: 0;
+}
+.content-wrap {
+    max-width: 900px;
+    width: 80%;
+    margin: 0 auto;
+    padding: 50px 0;
+}
+.item-details h3 + p {
+    font-style: italic;
+}
+.item-details h3 ~ p{
+    margin: 0;
+}
+.divider > section {
+    border-bottom: 1px dashed #343434;
+    padding: 25px 0;
+}
+.divider > section:last-of-type{
+    border-bottom: none;
+}
+
+/* Profile
+------------------------------------------------------*/
+header { 
+    background: #495867;
+    color: floralwhite;
+}
+
+
+/* Projects
+------------------------------------------------------*/
+.projects {
+    background:#ECC8AF;
+}
+.project-item {
+    overflow: hidden;
+}
+.project-item h3 {
+    margin-top: 0;
+}
+.projects .btn {
+  color: floralwhite;
+  background: #343434;
+  text-decoration: none;
+  padding: 8px;
+  border-radius: 4px;
+}
+/* Experience
+------------------------------------------------------*/
+.experience {
+    background: #E7AD99;
+}
+
+
+
+
+
+/* Awards
+------------------------------------------------------*/
+.awards {
+    background-image: url(images/masaaki-komori-4XZ_CHm95eY-unsplash.jpg);
+    background-size: cover;
+    background-position: top right;
+    padding-bottom: 100px;
+}
+.awards p{
+    width: 60%
+}
+
+/* Contact Info
+------------------------------------------------------*/
+footer {
+    background: #495867;
+    color: floralwhite;
+}
+.l {
+    text-decoration: underline;
+    padding: 20px;
+    display: inline-block;
+}
+ .contact-list {
+    list-style-type: none;
+    padding:0;
+}
+
+/* Responsive
+------------------------------------------------------*/
+@media screen and (min-width:750px){
+    .project-item img {
+    float: left;
+    margin-right: 35px;
+}
+    .experience-item {
+    display: grid;
+    grid-template-columns: 2fr 3fr;
+    column-gap: 30px;
+}
+    header, footer {
+         text-align: center;
+    }
+    .contact-list {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    
+}
+}
+@media screen and (max-width:749px) {
+    h1 {
+        font-size: 55px; 
+        margin-bottom: 20px;
+    }
+    h1 {
+        line-height: 1;
+    }
+    .contact-list a {
+        padding: 5px;
+    }
+}
